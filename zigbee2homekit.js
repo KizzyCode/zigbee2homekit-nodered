@@ -1,4 +1,4 @@
-import { cie_to_hsv } from "./colorconv";
+const colorconv = require("./colorconv");
 
 
 /**
@@ -33,7 +33,7 @@ function light_bulb(msg) {
         const x = msg.payload["color"]["x"],
             y = msg.payload["color"]["y"],
             brightness = translated["Brightness"];
-        const hsv = cie_to_hsv(x, y, brightness);
+        const hsv = colorconv.cie_to_hsv(x, y, brightness);
 
         // Set payload fields
         translated["Hue"] = hsv.h;

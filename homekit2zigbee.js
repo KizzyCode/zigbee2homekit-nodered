@@ -1,4 +1,4 @@
-import { hsv_to_cie } from "./colorconv";
+const colorconv = require("./colorconv");
 
 
 /**
@@ -46,7 +46,7 @@ function light_bulb(msg) {
         }
 
         // Translate color
-        let xy = hsv_to_cie(hue, saturation, brightness);
+        let xy = colorconv.hsv_to_cie(hue, saturation, brightness);
         translated["color"] = xy;
     }
     

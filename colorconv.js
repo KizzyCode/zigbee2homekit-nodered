@@ -81,7 +81,7 @@ function rgb_to_cie(r, g, b) {
  * @return {Object} An `{ r, g, b }`-object
  */
 function hsv_to_rgb(h, s, v) {
-    const h = h / 360,
+    h = h / 360,
         s = s / 100,
         v = v / 100;
 
