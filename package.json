@@ -1,0 +1,32 @@
+{
+  "name": "node-red-contrib-zigbee2homekit",
+  "version": "0.1.0",
+  "description": "Bridges Zigbee2MQTT messages to homekit and vice versa",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "node-red": {
+    "version": ">=2.0.0",
+    "nodes": {
+      "zigbee to homekit": "src/zigbee2homekit.js",
+      "homekit to zigbee": "src/homekit2zigbee.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KizzyCode/zigbee2homekit-nodered.git"
+  },
+  "keywords": [
+    "contrib",
+    "zigbee",
+    "mqtt",
+    "zigbee2mqtt",
+    "homekit"
+  ],
+  "author": "KizzyCode/Keziah Biermann",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/KizzyCode/zigbee2homekit-nodered/issues"
+  },
+  "homepage": "https://github.com/KizzyCode/zigbee2homekit-nodered#readme"
+}

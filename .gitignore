@@ -1,0 +1,10 @@
+# Ignore .DS_Store
+.DS_Store
+
+# Ignore build results
+/Cargo.lock
+/target
+
+# Ignore inbox files
+/example/haproxy.inbox/
+!/example/haproxy.inbox/.gitkeep
