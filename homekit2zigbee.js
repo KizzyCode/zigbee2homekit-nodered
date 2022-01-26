@@ -2,7 +2,7 @@ const colorconv = require("./colorconv");
 
 
 /**
- * Translates a Zigbee lightbulb state into a HomeKit compatible state
+ * Translates a HomeKit light bulb state into a Zigbee compatible state
  * @param {*} msg The message to translate
  */
 function light_bulb(msg) {

@@ -1,14 +1,14 @@
 <script type="text/javascript">
     RED.nodes.registerType("homekit to zigbee", {
-        category: "Apple HomeKit",
-        color: "#009933",
+        category: "parser",
+        color: "#DEBD5C",
         defaults: {
             name: { value: "" },
-            kind: { value: "Light Bulb", required: true }
+            kind: { required: true }
         },
         inputs: 1,
         outputs: 1,
-        icon: "bridge.svg",
+        icon: "parser-json.svg",
         label: function() {
             return this.name || "homekit to zigbee";
         }
@@ -22,7 +22,7 @@
         <input type="text" id="node-input-name" placeholder="Name">
     </div>
     <div class="form-row">
-        <label for="node-input-kind"><i class="fa fa-code-fork"></i> Device Type</label>
+        <label for="node-input-kind"><i class="fa fa-wrench"></i> Device Type</label>
         <select id="node-input-kind">
             <option value="Light Bulb">Light Bulb</option>
         </select>
